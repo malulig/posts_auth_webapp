@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "backend": "cd back && pnpm i && nest start --watch",
+    "frontend": "cd front && pnpm i && pnpm run dev",
+    "dev": "concurrently \"pnpm run backend\" \"pnpm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
