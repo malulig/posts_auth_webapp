@@ -55,7 +55,7 @@ back/
 
 ```bash
 git clone https://github.com/your-username/your-repository.git
-cd ajs-21-homework-92-task-2-auth-user/back
+
 ```
 
 2. Install dependencies:
@@ -66,7 +66,7 @@ pnpm install
 npm install
 ```
 
-3. Create a `.env` file in the `back/` directory and configure:
+3. Create a `.env` file in the `back/`, `front/`, and root directories and configure:
 
 ```
 DB_HOST=localhost
@@ -74,15 +74,17 @@ DB_PORT=3306
 DB_USERNAME=your_mysql_username
 DB_PASSWORD=your_mysql_password
 DB_NAME=your_database_name
-JWT_SECRET=your_jwt_secret
+SECRET=your_jwt_secret
 ```
 
 4. Run the application in development mode:
 
+use root directory
+
 ```bash
-pnpm run start:dev
+pnpm run dev
 # or
-npm run start:dev
+npm run dev
 ```
 
 ### Database Migration
